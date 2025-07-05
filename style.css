@@ -1,0 +1,112 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+background-color: blue;
+color: beige;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+min-height:100vh ;
+transition: background-color 0.5s ease ;
+background-repeat: no-repeat;
+background-size: cover;
+}
+header{
+font-size: 1.5rem;
+
+}
+header,
+form{
+min-height: 20vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+form input,form button{
+border: none;
+
+padding: 0.5rem;
+font-size: 2rem;
+background: white;
+
+}
+form button{
+color: blue;
+background: white;
+cursor: pointer;
+transition: all 0.4s ease;
+}
+form button:hover{
+background: blue
+color: beige;
+
+}
+.buttonchanger{
+cursor: pointer;
+background:white  ;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0.7rem;
+margin-left: 40%;
+color: blue;
+}
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list{
+min-width: 30%;
+  list-style: none;
+}
+.todo{
+margin: 0.5rem;
+background: white;
+font-size:1.5rem ;
+color: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: all 0.5s ease;
+}
+.todo li{
+  flex: 1;
+}
+.delbtn{
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1rem;
+
+background: yellow;
+color: brown;
+
+}
+
+.complete-btn{
+background: green;
+color: black;
+border: none;
+cursor: pointer;
+font-size: 1rem;
+padding: 1rem;
+}
+.todo-item{
+  padding: 0rem 0.5rem;
+
+}
+.fa-trash,.fa-check{
+
+  pointer-events: none;
+}
+.completed{
+
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall{
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
