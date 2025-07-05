@@ -53,17 +53,17 @@ todoinput.value= "";
 
 function delecheck(e){
     const item = e.target;
-    if(item.classList(e) === "delbtn"){ 
+    if(item.classList.contains("delbtn")){ 
         const todo = item.parentElement;
-todo.classList.add("fall");
-//todo.remove();
-}
-if(item.classList(e) === "complete-btn"){
-    const todo = item.parentElement;
-    todo.classList.toggle("completed");
+        todo.classList.add("fall");
+        // todo.remove();
+    }
+    if(item.classList.contains("complete-btn")){ 
+        const todo = item.parentElement;
+        todo.classList.toggle("completed");
+    }
+ 
 
-}
-    
 }
 
 
